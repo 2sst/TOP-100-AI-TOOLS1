@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 100 AI Tools - Discover the Best AI Solutions</title>
+    <meta name="description" content="Discover the top 100 AI tools for chatbots, writing, productivity, marketing, design, and video creation. Find the perfect AI solution for your needs.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <div class="logo">
+                <h1 class="logo-text">AI<span class="logo-accent">Tools</span></h1>
+                <span class="logo-subtitle" data-translate="subtitle">Top 200 AI Solutions</span>
+            </div>
+            
+            <div class="nav-controls">
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <button class="language-btn" aria-label="Select language" aria-expanded="false">
+                        <span class="current-lang">EN</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="language-dropdown" role="menu">
+                        <button class="lang-option" data-lang="en" role="menuitem">🇺🇸 English</button>
+                        <button class="lang-option" data-lang="tr" role="menuitem">🇹🇷 Türkçe</button>
+                        <button class="lang-option" data-lang="ar" role="menuitem">🇸🇦 العربية</button>
+                        <button class="lang-option" data-lang="es" role="menuitem">🇪🇸 Español</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <div class="hero-content">
+            <h2 class="hero-title" data-translate="hero-title">Discover the Future of AI</h2>
+            <p class="hero-description" data-translate="hero-description">
+                Explore our curated collection of the top 100 AI tools that are revolutionizing industries worldwide.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label" data-translate="stat-tools">AI Tools</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label" data-translate="stat-categories">Categories</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label" data-translate="stat-updated">Updated</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-cards">
+                <div class="floating-card card-1">🤖</div>
+                <div class="floating-card card-2">✨</div>
+                <div class="floating-card card-3">🚀</div>
+                <div class="floating-card card-4">💡</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="controls-section" role="search">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <input 
+                        type="search" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Search AI tools..." 
+                        data-translate-placeholder="search-placeholder"
+                        aria-label="Search AI tools"
+                    >
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="categoryFilter" class="filter-label" data-translate="filter-category">Category:</label>
+                    <select id="categoryFilter" class="filter-select" aria-label="Filter by category">
+                        <option value="all" data-translate="filter-all">All Categories</option>
+                        <option value="chatbot" data-translate="category-chatbot">Chatbots</option>
+                        <option value="writing" data-translate="category-writing">Writing</option>
+                        <option value="productivity" data-translate="category-productivity">Productivity</option>
+                        <option value="marketing" data-translate="category-marketing">Marketing</option>
+                        <option value="design" data-translate="category-design">Design</option>
+                        <option value="video" data-translate="category-video">Video</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="pricingFilter" class="filter-label" data-translate="filter-pricing">Pricing:</label>
+                    <select id="pricingFilter" class="filter-select" aria-label="Filter by pricing">
+                        <option value="all" data-translate="filter-all">All Pricing</option>
+                        <option value="free" data-translate="pricing-free">Free</option>
+                        <option value="freemium" data-translate="pricing-freemium">Freemium</option>
+                        <option value="paid" data-translate="pricing-paid">Paid</option>
+                    </select>
+                </div>
+
+                <button class="clear-filters-btn" id="clearFilters" data-translate="clear-filters">
+                    Clear Filters
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid Section -->
+    <main class="main-content" role="main">
+        <div class="container">
+            <div class="results-info">
+                <span id="resultsCount" class="results-count">100</span>
+                <span class="results-text" data-translate="results-text">tools found</span>
+            </div>
+
+            <div class="tools-grid" id="toolsGrid" role="grid" aria-label="AI tools grid">
+                <!-- Tools will be dynamically inserted here -->
+            </div>
+
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-content">
+                    <div class="no-results-icon">🔍</div>
+                    <h3 class="no-results-title" data-translate="no-results-title">No tools found</h3>
+                    <p class="no-results-description" data-translate="no-results-description">
+                        Try adjusting your search terms or filters to find what you're looking for.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">AI<span class="logo-accent">Tools</span></h3>
+                    <p class="footer-description" data-translate="footer-description">
+                        Your ultimate directory for discovering the best AI tools and solutions.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading" data-translate="footer-categories">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-translate="category-chatbot">Chatbots</a></li>
+                        <li><a href="#" data-translate="category-writing">Writing</a></li>
+                        <li><a href="#" data-translate="category-design">Design</a></li>
+                        <li><a href="#" data-translate="category-video">Video</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading" data-translate="footer-resources">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-translate="footer-about">About</a></li>
+                        <li><a href="#" data-translate="footer-contact">Contact</a></li>
+                        <li><a href="#" data-translate="footer-submit">Submit Tool</a></li>
+                        <li><a href="#" data-translate="footer-privacy">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-translate="footer-copyright">
+                    © 2024 AITools. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
